@@ -1,12 +1,32 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Phone, Mail, MapPin, Github, Linkedin, Download } from "lucide-react";
+import { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 
 const Resume = () => {
+  const resumeRef = useRef<HTMLDivElement>(null);
+
+  const handlePrint = useReactToPrint({
+    contentRef: resumeRef,
+    documentTitle: "Ahmed_Bouzir_Resume",
+  });
+
   return (
     <div className="min-h-screen bg-background py-8">
       <div className="max-w-4xl mx-auto px-4">
+        {/* Export Button */}
+        <div className="mb-6 text-center">
+          <Button onClick={handlePrint} className="gap-2">
+            <Download className="w-4 h-4" />
+            Export as PDF
+          </Button>
+        </div>
+        
+        {/* Resume Content */}
+        <div ref={resumeRef}>
         {/* Header Section */}
         <Card className="p-8 mb-6">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -215,6 +235,7 @@ const Resume = () => {
             <span className="text-sm text-muted-foreground mt-2 md:mt-0">August 2022</span>
           </div>
         </Card>
+        </div>
       </div>
     </div>
   );
