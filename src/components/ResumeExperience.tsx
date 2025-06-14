@@ -21,9 +21,11 @@ const ResumeExperience = () => {
             <span className="text-sm text-muted-foreground">Feb 2025 - Present</span>
           </div>
           <ul className="list-disc list-inside text-muted-foreground space-y-1 mb-3">
-            <li>Leading the modernization of BICICI Bank's core banking systems</li>
-            <li>Implementing new technologies to enhance system performance and reliability</li>
-            <li>Collaborating with stakeholders to define technical requirements and deliverables</li>
+            <li>Integrated with Active Directory</li>
+            <li>Built async report export module</li>
+            <li>Developed APIs for task history and complex customer search</li>
+            <li>Created advanced statistical queries</li>
+            <li>Implemented agent notifications for customer file revisions</li>
           </ul>
           <div className="flex flex-wrap gap-2">
             <Badge variant="outline">Java 17</Badge>
@@ -44,11 +46,6 @@ const ResumeExperience = () => {
             <li>Designed standardized processes for handling i-requests requiring Initiator and Validators</li>
             <li>Managed merchant configurations and onboarding process</li>
             <li>Implemented payment processes including payment allocation and repayment APIs</li>
-            <li>Integrated with Active Directory</li>
-            <li>Built async report export module</li>
-            <li>Developed APIs for task history and complex customer search</li>
-            <li>Created advanced statistical queries</li>
-            <li>Implemented agent notifications for customer file revisions</li>
           </ul>
           <div className="flex flex-wrap gap-2">
             <Badge variant="outline">Java 17</Badge>
