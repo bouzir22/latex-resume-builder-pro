@@ -17,8 +17,27 @@ const ResumeExperience = () => {
         <div className="relative pl-6 border-l-2 border-border">
           <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-0"></div>
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+            <h5 className="font-semibold text-foreground">BICICI Revamp (BICICI Bank)</h5>
+            <span className="text-sm text-muted-foreground">Feb 2025 - Present</span>
+          </div>
+          <ul className="list-disc list-inside text-muted-foreground space-y-1 mb-3">
+            <li>Leading the modernization of BICICI Bank's core banking systems</li>
+            <li>Implementing new technologies to enhance system performance and reliability</li>
+            <li>Collaborating with stakeholders to define technical requirements and deliverables</li>
+          </ul>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="outline">Java 17</Badge>
+            <Badge variant="outline">Spring Boot</Badge>
+            <Badge variant="outline">Microservices</Badge>
+            <Badge variant="outline">PostgreSQL</Badge>
+          </div>
+        </div>
+
+        <div className="relative pl-6 border-l-2 border-border">
+          <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-0"></div>
+          <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h5 className="font-semibold text-foreground">Fabmisr micro-finance (Backend Developer)</h5>
-            <span className="text-sm text-muted-foreground">Mar 2024 - Present</span>
+            <span className="text-sm text-muted-foreground">Mar 2024 - Jan 2025</span>
           </div>
           <ul className="list-disc list-inside text-muted-foreground space-y-1 mb-3">
             <li>Implemented APIs for mobile, backoffice, merchant portal applications</li>
