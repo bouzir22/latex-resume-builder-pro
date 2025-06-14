@@ -101,3 +101,77 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Print styles to ensure PDF looks identical to web version */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  /* Ensure cards have visible backgrounds */
+  .bg-card {
+    background: white !important;
+    border: 1px solid #e5e7eb !important;
+  }
+  
+  /* Ensure badges have visible backgrounds */
+  .bg-secondary {
+    background: #f3f4f6 !important;
+    border: 1px solid #d1d5db !important;
+  }
+  
+  .bg-muted {
+    background: #f9fafb !important;
+  }
+  
+  /* Ensure primary colors are visible */
+  .bg-primary {
+    background: #1f2937 !important;
+  }
+  
+  .text-primary {
+    color: #1f2937 !important;
+  }
+  
+  .text-foreground {
+    color: #111827 !important;
+  }
+  
+  .text-muted-foreground {
+    color: #6b7280 !important;
+  }
+  
+  /* Ensure borders are visible */
+  .border-border {
+    border-color: #e5e7eb !important;
+  }
+  
+  .border-l-2 {
+    border-left: 2px solid #e5e7eb !important;
+  }
+  
+  /* Ensure timeline dots are visible */
+  .bg-primary.rounded-full {
+    background: #1f2937 !important;
+  }
+  
+  /* Prevent page breaks inside cards */
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+  
+  /* Remove any shadow effects that don't print well */
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+}
