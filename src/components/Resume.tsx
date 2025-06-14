@@ -137,6 +137,11 @@ const Resume = () => {
                 <li>Designed standardized processes for handling i-requests requiring Initiator and Validators</li>
                 <li>Managed merchant configurations and onboarding process</li>
                 <li>Implemented payment processes including payment allocation and repayment APIs</li>
+                <li>Integrated with Active Directory</li>
+                <li>Built async report export module</li>
+                <li>Developed APIs for task history and complex customer search</li>
+                <li>Created advanced statistical queries</li>
+                <li>Implemented agent notifications for customer file revisions</li>
               </ul>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline">Java 17</Badge>
