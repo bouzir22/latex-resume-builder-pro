@@ -7,10 +7,23 @@ const ResumeExperience = () => {
       <h3 className="text-xl font-semibold text-foreground mb-6">Professional Experience</h3>
       
       <div className="space-y-8">
-        {/* Proxym Group Header */}
-        <div>
-          <h4 className="text-lg font-semibold text-foreground">Proxym Group</h4>
-          <p className="text-muted-foreground">Sousse, Tunisia</p>
+        {/* Proxym Group Header with Logo */}
+        <div className="flex items-center gap-4">
+          <div className="flex-shrink-0">
+            <img 
+              src="https://www.proxym-group.com/wp-content/uploads/2023/05/proxym-group-logo.png" 
+              alt="Proxym Group Logo" 
+              className="h-12 w-auto object-contain"
+              onError={(e) => {
+                // Fallback if logo fails to load
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold text-foreground">Proxym Group</h4>
+            <p className="text-muted-foreground">Sousse, Tunisia</p>
+          </div>
         </div>
 
         {/* Experience Items */}
